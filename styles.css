@@ -322,16 +322,11 @@ table {
 
 /* MEDIA QUERIES (MEDIUM) */ 
     @media screen and (min-width: 800px) {
-    #results {
+    #results .container-results {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
-    }
-    .container-results {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 2rem;
+        align-items: end;
     }
     .results-table {
         width: 50%;
@@ -342,7 +337,7 @@ table {
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 1rem;
     }
     .menu {
         display: none
@@ -355,6 +350,9 @@ table {
 
 /* MEDIA QUERIES (LARGE) */
     @media screen and (min-width: 1024px) {
+        .hero h2 {
+            font-size: 2rem;
+        }
         .cards {
             grid-template-columns: repeat(3, 1fr);
         }
@@ -367,7 +365,7 @@ table {
             gap: 1rem;
         }
         textarea {
-            min-height: 120px;
+            min-height: 150px;
         }
         input[type="submit"] {
             grid-column: 1 / -1;
