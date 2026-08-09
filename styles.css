@@ -118,25 +118,56 @@ table {
     }
 
     h2 {
-        font-size: 2rem;
-        font-weight: 400;
-        margin-bottom: 1rem;
+        
+        
+        margin: 1rem;
+        padding: 1rem;
     }
 
     h3 {
-        font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
+       line-height: 2rem;
+        
+        padding: 1rem;
+        margin: 1rem;
     }
 
-    .cards {
+    .card {
         background: var(--blue);
         color: var(--white);
         border-radius: 10px;
         padding: 2rem;
         margin-bottom: 1rem;
     }
-    
+
+    .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        transition: .5s ease-in-out;
+    }
+
+    table {
+        width: 100%;
+        background: var(--black);
+        color: var(--white);
+        margin-top: 1rem;
+    }
+
+    th, td {
+        padding: 1rem;
+        text-align: left;
+        border: 1px solid var(--white);
+    }
+
+    tbody tr:nth-child(even) {
+        background: var(--charcoal);
+    }
+    p {
+        padding: 1rem;
+    }
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
     html, body {
         min-width: 400px;
@@ -207,6 +238,7 @@ table {
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
+    background: var(--blue);
     grid-template-columns: repeat(5, 1fr);
     align-items: flex-end;
     justify-content: space-around;
@@ -249,7 +281,13 @@ table {
 .bar {
     animation: stepUp 1s ease-in-out forwards;
 }
-
+#results {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: var(--blue);
+    color: var(--white);
+}
 
 /* MEDIA QUERIES (MEDIUM) */ 
     @media screen and (min-width: 800px) {
@@ -258,7 +296,7 @@ table {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
-    .results-container {
+    .container-results {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
