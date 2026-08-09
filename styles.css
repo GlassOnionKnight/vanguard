@@ -367,9 +367,11 @@ table {
         textarea {
             min-height: 150px;
         }
+       
         input[type="submit"] {
             grid-column: 1 / -1;
-            align-self: center;
+            justify-self: center;
         }
+       
         
     }
