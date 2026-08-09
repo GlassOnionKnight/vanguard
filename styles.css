@@ -80,6 +80,28 @@ table {
         height: auto;
         display: block;
     }
+
+    header {
+        background: var(--black);
+        border-bottom: 3px solid var(--blue);
+        padding: 1rem 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav h2 {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    
+
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
     html, body {
         min-width: 400px;
