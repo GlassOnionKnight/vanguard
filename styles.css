@@ -100,8 +100,43 @@ table {
     .nav-links {
         display: none;
     }
-    
 
+    .nav-links li {
+        color: var(--blue);
+        font-weight: 700;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .menu {
+        background: none;
+        border: none;
+        color: var(--white);
+        cursor: pointer;
+    }
+    section {
+        padding: 2rem 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .cards {
+        background: var(--blue);
+        color: var(--white);
+        border-radius: 10px;
+        padding: 2rem;
+        margin-bottom: 1rem;
+    }
+    
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
     html, body {
         min-width: 400px;
@@ -123,7 +158,22 @@ table {
     padding: 1rem;
     overflow: hidden;
 }
-
+    .hero h2 {
+        color: var(--white);
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+    .hero p {
+        color: var(--white);
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin: 0 auto 2rem;
+    }
+    .hero .container {
+        background: rgba(0, 0, 0, 0.75);
+        padding: 1rem;
+    }
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
     h1{
     position: relative;
@@ -132,11 +182,27 @@ table {
 
     h1::before  {
     content: "";
+    position:absolute;
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
 
+}
+.hero a, input[type="submit"] {
+    display: inline-block;
+    background: var(--blue);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.hero a:hover, input[type="submit"]:hover {
+    background: var(--red);
 }
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
