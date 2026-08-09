@@ -168,6 +168,37 @@ table {
     p {
         padding: 1rem;
     }
+
+    #contact {
+        background: var(--black);
+        color: var(--white);
+    }
+
+    form {
+        margin-top: 2rem;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid var(--blue);
+        margin-bottom: 1rem;
+        font-family: var(--font);
+    }
+    footer {
+        background: var(--black);
+        color: var(--white);
+        text-align: center;
+        padding: 1rem;
+    }
+    footer a {
+        color: var(--blue)
+    }
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
     html, body {
         min-width: 400px;
