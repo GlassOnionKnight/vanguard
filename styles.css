@@ -278,7 +278,7 @@ table {
     font-weight: 700;
     padding: 1rem 2rem;
     border-radius: 5px;
-    
+
 }
 
 .hero a:hover, input[type="submit"]:hover {
@@ -385,16 +385,28 @@ table {
         .cards {
             grid-template-columns: repeat(3, 1fr);
         }
-        .container-results {
-            flex-direction: row;
-        }
-        
-        
-        
-        
-        
         textarea {
             min-height: 150px;
+        }
+        #results {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            padding: 1rem;
+            
+        }
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            align-items: start;
+        }
+        .message {
+            grid-column: 1;
+        }
+        .submit-wrapper {
+            grid-column: 2;
+            justify-self: center;
         }
         
     }
