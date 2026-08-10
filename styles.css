@@ -67,11 +67,10 @@ table {
     html {
         scroll-behavior: smooth;
     }
-
     body{
         font-family: var(--font);
         background: var(--white);
-        color: var(--charcoal);
+        color: var(--black);
         line-height: 1rem;
        
     }
@@ -99,6 +98,7 @@ table {
 
     .nav-links {
         display: none;
+        gap: 1rem;
     }
 
     .nav-links li {
@@ -107,6 +107,11 @@ table {
         cursor: pointer;
         text-transform: uppercase;
     }
+    .nav-links li:hover {
+        color: var(--black);
+        background-color: var(--blue);
+    }
+
     .menu {
         background: none;
         border: none;
@@ -118,20 +123,24 @@ table {
     }
 
     h2 {
-        
-        
+        font-size: 2rem;
+        font-weight: bold;
         margin: 1rem;
         padding: 1rem;
     }
 
     h3 {
        line-height: 2rem;
-        
+        font-size: 2rem;
+        font-weight: bold;
         padding: 1rem;
         margin: 1rem;
     }
 
     .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         background: var(--blue);
         color: var(--white);
         border-radius: 10px;
@@ -168,7 +177,12 @@ table {
     p {
         padding: 1rem;
     }
-
+     #about {
+        background: var(--white);
+     }
+     #services {
+        background: var(--white);
+     }
     #contact {
         background: var(--black);
         color: var(--white);
@@ -235,6 +249,7 @@ table {
     .hero .container {
         background: rgba(0, 0, 0, 0.75);
         padding: 1rem;
+        max-width: 800px;
     }
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
     h1{
@@ -261,6 +276,9 @@ table {
     cursor: pointer;
     text-decoration: none;
     font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    
 }
 
 .hero a:hover, input[type="submit"]:hover {
@@ -326,7 +344,6 @@ table {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
-        align-items: end;
     }
     .results-table {
         width: 50%;
@@ -342,6 +359,18 @@ table {
     .menu {
         display: none
     }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    input[type="submit"] {
+        grid-column: 2;
+        justify-self: center;
+    }
+
     .nav-links{
         display: flex;
         gap: 2rem;
@@ -356,22 +385,16 @@ table {
         .cards {
             grid-template-columns: repeat(3, 1fr);
         }
-        .results-container {
+        .container-results {
             flex-direction: row;
         }
-        form {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
+        
+        
+        
+        
+        
         textarea {
             min-height: 150px;
         }
-       
-        input[type="submit"] {
-            grid-column: 1 / -1;
-            justify-self: center;
-        }
-       
         
     }
