@@ -391,22 +391,31 @@ table {
         #results {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            padding: 1rem;
-            
+        }
+        #results .container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
         form {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
-            align-items: start;
+        }
+        .field{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            margin: 1rem;
         }
         .message {
             grid-column: 1;
         }
         .submit-wrapper {
             grid-column: 2;
-            justify-self: center;
+            align-self: center;
+        }
+        .submit-wrapper input[type="submit"] {
+            width: 100%;
         }
         
     }
