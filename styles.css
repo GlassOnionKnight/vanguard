@@ -340,7 +340,7 @@ table {
 
 /* MEDIA QUERIES (MEDIUM) */ 
     @media screen and (min-width: 800px) {
-    #results .container-results {
+    #results .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
@@ -389,12 +389,33 @@ table {
             min-height: 150px;
         }
         #results {
+            padding: 1rem 0;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        #bar-chart {
+            max-width: none;
+            width: 100%;
+        }
+        .results-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            width: 100%;
+            gap: 2rem;
+            margin-top: 2rem;
+            padding: 1rem;
         }
-        #results .container {
-            max-width: 1200px;
-            margin: 0 auto;
+        .profits, .growth {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .profits h3, .growth h3 {
+            margin-bottom: 1rem;
+        }
+        .profits table {
+            width: 100%;
         }
         form {
             display: grid;
